@@ -3,6 +3,8 @@ CUE stands for Configure, Unify, Execute.
 Cue is a purpose built logical language for working with config, schemas, data, and executing on these things.
 
 Cue is not a general purpose language and instead aims for Turing-incompleteness.
+- No conditionals.
+- No recursion.
 
 Cue is a superset of JSON. This means you can represent any JSON in Cue with a slightly different syntax.
 

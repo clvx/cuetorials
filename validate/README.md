@@ -11,12 +11,12 @@ Before we can import Go to Cue:
 
 2. Download the Kubernetes API code (you need a local copy)
 
-	# "go get" the Kubernetes code
+	#"go get" the Kubernetes code
 	go get -u k8s.io/api/... k8s.io/apimachinery/...
 
 3. Import the Go into Cue definitions
 	
-	# "cue go get" to import into Cue defs
+	#"cue go get" to import into Cue defs
 	cue get go k8s.io/api/... k8s.io/apimachinery/...
 
 4. Apply the Kubernetes Cue to our Cuetorials Cue

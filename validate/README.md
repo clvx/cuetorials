@@ -37,7 +37,7 @@ Before we can import Go to Cue:
 	```
 5. Validate that our config complies with the Kubernetes spec
 	
-	cue eval ./...
+	`cue eval ./...`
 	
 Cue has a module and package system like any proper language. With modules and packages, you also have imports.
 Cue’s module system is very similar to Go’s, but has it’s differences.

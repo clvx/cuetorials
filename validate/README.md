@@ -10,16 +10,17 @@ Before we can import Go to Cue:
 1. we need to setup a file needed for Cue modules to work.
 
 2. Download the Kubernetes API code (you need a local copy)
-
+	```
 	#"go get" the Kubernetes code
 	go get -u k8s.io/api/... k8s.io/apimachinery/...
-
+	```
 3. Import the Go into Cue definitions
-	
+	```
 	#"cue go get" to import into Cue defs
 	cue get go k8s.io/api/... k8s.io/apimachinery/...
-
+	```
 4. Apply the Kubernetes Cue to our Cuetorials Cue
+	```
 	package cuetorials
 
 	import (
@@ -33,7 +34,7 @@ Before we can import Go to Cue:
 	ingress: [string]: extn.#Ingress
 
 	// ...
-
+	```
 5. Validate that our config complies with the Kubernetes spec
 	
 	cue eval ./...
@@ -55,4 +56,4 @@ Cue’s module system is very similar to Go’s, but has it’s differences.
 While, Cue does not yet have a dependency management system, it will import and process them.
 
 
-Cue dependencies are located in the cue.mod/pkg/... directory. From here, dependent modules are nested under directories mirroring their import path.
+Cue dependencies are located in the `cue.mod/pkg/...` directory. From here, dependent modules are nested under directories mirroring their import path.

@@ -1,7 +1,7 @@
 Cue will reference a value from the nearest enclosing scope. Some quirks are:
-• fields without quotes you can reference as identifiers and with dot 
-• fields with quotes require index 
-• fields defined across scopes require sufficient paths to resolve
+- fields without quotes you can reference as identifiers and with dot,
+- fields with quotes require index.
+- fields defined across scopes require sufficient paths to resolve.
 
 An alias defines a local value which is not part of the struct. They can be used for accessing shadowed fields, naming intermediate calculations or expressions, and more. They will not be output.
 
